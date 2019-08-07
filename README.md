@@ -28,16 +28,18 @@ These are common extensions that I use withen my own projects. I have them split
 * `static var hours: [Date] { return Date().getHours() }`: returns a Date for every hour of current day.
 
 ### StringProtocol
-* `var words: [SubSequence]`: returns an array of all the words in a String.
-    example:
-    `let sentence = "A test sentence"`
-    `let words = sentence.words`
-    `\\words = {"A", "test", "sentance"}`
+* `var words: [SubSequence]`: returns an array of all the words in a String.  
+  
+  example:  
+  `let sentence = "A test sentence"`  
+  `let words = sentence.words`  
+  `\\words = {"A", "test", "sentance"}`
 
 ### Collection
 
-* `subscript(safe index: Index) -> Element?`: a safe return for requesting elements from an array.
-example:
-`let words = {"A", "test", "sentance"}`
-`let word = words[10] \\app crashes`
-`let word = words[safe 10] \\ returns nil`
+* `subscript(safe index: Index) -> Element?`: a safe return for requesting elements from an array.  
+  
+  example:   
+  `let words = {"A", "test", "sentance"}`  
+  `let word = words[10] \\app crashes`  
+  `let word = words[safe 10] \\ returns nil`
